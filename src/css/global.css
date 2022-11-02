@@ -26,10 +26,11 @@
   }
   
   .todo-form {
-    margin-bottom: 32px;
+    position: relative;
   }
   
   .todo-input {
+    position: relative;
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
     border: 2px solid #ffffff;
@@ -56,10 +57,11 @@
   }
   
   .todo-input.edit {
-    border: 2px solid #149fff;
+    border: 2px solid #0c9aff;
   }
   
   .todo-button.edit {
+    position: absolute;
     background: linear-gradient(
       90deg,
       rgba(20, 159, 255, 1) 0%,
