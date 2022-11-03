@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './global.css';
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+const DATA = [
+  { id: "todo-0", name: "Wake Up!", completed: true },
+  { id: "todo-1", name: "Get fresh", completed: false },
+];
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+    <App tasks={DATA} />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
